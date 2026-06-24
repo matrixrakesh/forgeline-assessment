@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Communication/etc/communication.xsd">
+    <topic name="forgeline.sellaxis.webhook" request="string">
+        <handler name="forgelineSellaxisWebhookHandler" type="Forgeline\SellaxisIntegration\Model\Queue\Consumer" method="processMessage"/>
+    </topic>
+</config>
